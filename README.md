@@ -85,10 +85,13 @@ YouTubeIList will scan the playlists and update the spreadsheet accordingly. It 
 You can run YouTubeIList periodically (for example, using a Windows task scheduler) to check for any changes in the playlists.
 
 ## Demonstration
-This is what it looks like if the script detects the changes
+This is what it looks like if the script detects any changes. The unavailable videos are highlighted in blue: 
 ![Demo image](https://github.com/tmdwnsyang/YouTubeIList/blob/main/live_demo.gif "This is a demo image")
 
-You can also view the live example of the code [on this spreadsheet.](https://docs.google.com/spreadsheets/d/1CWWOd7b0FuHOEDYJJ5-4TfP6INf6W8czNUkT-rArRJg/edit#gid=0) The sample code is run every 24 hours. 
+You can also view the live example of the code [on this spreadsheet.](https://docs.google.com/spreadsheets/d/1CWWOd7b0FuHOEDYJJ5-4TfP6INf6W8czNUkT-rArRJg/edit#gid=0) The spreadsheet is updated every 24 hours. 
+
+## Important note
+If you decide to replace a column with a different playlist, please clear the column before running. Otherwise it will merge the existing entries with the new playlist.
 
 ## License
 YouTubeIList is licensed under the MIT License. See [LICENSE](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer) for more details.
