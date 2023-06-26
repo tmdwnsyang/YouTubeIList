@@ -106,13 +106,14 @@ def send_email(deleted_songs_matrix: list, playlist_titles:list, creds):
     """
     service_email = build('gmail', 'v1', credentials=creds)
     print('Song(s) deleted from playlist(s)! Drafting an email log...')
-    body = 'Hey, this message is sent to you to let you know that the following song(s) has been deleted from YouTube:\n\n'
+    body = 'Hey, this message is sent to you to let you know that the following song(s) is no longer available on your playlist:\n\n'
     for c in range(len(deleted_songs_matrix)): 
         if (len(deleted_songs_matrix[c]) > 0):
             body += f'Playlist name: {playlist_titles[c]}\n'
             for r, s in enumerate(deleted_songs_matrix[c], 1):
                 body += f'  {r}. '+ f'{s}\n'
-    body += f'\nI understand your frustration. But it\'s okay, because I logged it for you here: {SPREADSHEET_URL}.\n\nI hope that was helpful. Ciao!\n\nSeung'
+            body += '\n'
+    body += f'If you manually deleted these videos from your playlist(s), please ignore this message. If not, I logged it for you here: {SPREADSHEET_URL}.\n\nI hope that was helpful. Ciao!\n\nSeung'
 
     message = MIMEText(body)
     message['to'] = RECIPIENTS
