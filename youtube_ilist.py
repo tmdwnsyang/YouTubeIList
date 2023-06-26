@@ -48,7 +48,7 @@ PLAYLIST_URLS = ['https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj
                  'https://www.youtube.com/watch?v=OiC1rgCPmUQ&list=PL3-sRm8xAzY9gpXTMGVHJWy_FMD67NBed',
                  'https://www.youtube.com/watch?v=wSTYIyQxfPQ&list=PLXPyqbiCwzZr8IeNtn4Cu1FvpEHs_4L1g'
                  ]
-RECIPIENTS = 'tmdwns.yang@gmail.com'
+RECIPIENTS = 'demo.address@gmail.com'
 
 COLUMNS_LEX_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
                      'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
