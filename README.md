@@ -11,7 +11,7 @@ YouTubeIList solves this problem by providing the following features:
 * YouTubeIList retrieves the title and the uploader name from provided YouTube playlists, then writes each entry into a Google Spreadsheet file (which is linked to the owner’s Google account).
 * YouTubeIList reads the entries in the Sheets and the playlist descriptions retrieved from YouTube, and updates new titles along with the uploader name in the spreadsheet.
 * YouTubeIList marks the entries in the spreadsheet that are no longer found in the YouTube playlist by changing the cell style (such as bolding, changing the foreground color to white, and cell color to blue).
-* YouTubeIList also detects playlists that have been re-added, so it will reset the cell style to default if that happens.
+* YouTubeIList also detects videos that have been re-added to the playlist, so it will reset the cell style to default if that happens.
 * YouTubeIList emails the recipient (stored in the `RECIPIENTS` variable), with a body detailing which video has been removed from which playlist by including each video titles, the uploader names, and the playlist names.
 
 ## Installation
@@ -90,7 +90,7 @@ This is what it looks like if the script detects any changes. The unavailable vi
 ![Demo image](https://github.com/tmdwnsyang/YouTubeIList/blob/main/live_demo.gif "This is a demo image")
 
 You can also view the live example of the code [on this spreadsheet](https://docs.google.com/spreadsheets/d/1CWWOd7b0FuHOEDYJJ5-4TfP6INf6W8czNUkT-rArRJg/edit#gid=0).
-I picked the playlists that claim to be updated every week. The spreadsheet is updated every 24 hours. 
+I picked the **publically available** playlists that claim to be updated every week. The spreadsheet is automatically updated every 24 hours. 
 
 ## Important note
 If you decide to replace a column with a different playlist, please clear the column before running. Otherwise it will merge the existing entries with the new playlist.
