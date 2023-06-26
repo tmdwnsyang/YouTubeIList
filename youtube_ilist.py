@@ -62,6 +62,9 @@ YDL_OPTS = {
     'extract_flat': 'in_playlist',
     'skip_download': True,
     'quiet': True,
+    'compat_opts': {
+        'no-youtube-unavailable-videos' : True
+        }
 }
 
 
