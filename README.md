@@ -1,6 +1,9 @@
 # YouTubeIList and Motivation
 YouTubeIList is a script that monitors videos in YouTube playlists and detects when they become unavailable. This is a common problem for YouTube users who create and watch playlists, as some videos may be deleted, made private, or blocked by YouTube for various reasons (such as copyright strike). However, YouTube only displays a generic message: “hiding unavailable videos”, without providing any further information.
 
+Does this look familiar to you?
+![Image showing the problem](https://github.com/tmdwnsyang/YouTubeIList/blob/main/problem.jpg)
+
 YouTubeIList solves this problem by providing the following features:
 
 * It alerts the user (or multiple users) when a video becomes unavailable in a playlist.
